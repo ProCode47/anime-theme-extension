@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+body {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  background-size: cover;
+  color: white;
+}
+
+.fa-thumb-tack {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  font-size: 50px;
+  color: white;
+}
+
+.bar {
+  display: flex;
+  min-width: 350px;
+  margin: 0 auto;
+  height: 45px;
+  width: 90%;
+  border-radius: 30px;
+  border: 1px solid #dcdcdc;
+  background-color: white;
+  margin-bottom: 2rem;
+
+  .searchbar {
+    display: flex;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: none;
+    width: 88%;
+    padding-left: 25px;
+    font-size: 20px;
+    outline: none;
+  }
+
+  .search-icon {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+    background-color: white;
+
+    i {
+      margin-top: -5px;
+    }
+  }
+
+  &:hover {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+  }
+  &:focus-within {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline: none;
+  }
+  .fa-search {
+    color: #4285f4;
+  }
+}
+
+.google {
+  display: flex;
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  height: fit-content;
+  padding: 20px;
+  flex-direction: column;
+
+  h1 {
+    color: rgba(255, 255, 255, 0.74);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 7rem;
+  }
+
+  .icon-tray {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 80px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .icon-circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 80%;
+        }
+
+        .fa {
+          font-size: 2rem;
+        }
+        .fa-facebook {
+          color: #4867aa;
+        }
+        .fa-github {
+          color: #ebe9e9;
+        }
+        .fa-youtube-play {
+          color: #fe0000;
+        }
+        .fa-twitter {
+          color: #5da9dd;
+        }
+      }
+
+      .icon-text {
+        font-size: 1rem;
+        margin: 0px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.watch {
+  position: absolute;
+  bottom: -5%;
+  padding-left: 15px;
+
+  h1 {
+    text-align: left;
+    font-weight: lighter;
+    font-size: 4vw;
+
+    &:last-child {
+      font-size: 6vw;
+      margin-top: -3vw;
+    }
+  }
+}
