@@ -30,6 +30,8 @@ const getCookie = (cname) => {
 const imageChange = () => {
   const images = [
     "./assets/144565.jpg",
+    "./assets/122122.jpg",
+    "./assets/432432.jpg",
     "./assets/526885.jpg",
     "./assets/530476.jpg",
     "./assets/670838.jpg",
