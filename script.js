@@ -72,7 +72,7 @@ const imageChange = () => {
   if (savedChoice != "") {
     document.body.style.backgroundImage = `url(${images[savedChoice]})`;
   } else {
-    choice = Math.floor(Math.random() * (19 - 0) + 0);
+    choice = Math.floor(Math.random() * images.length);
     document.body.style.backgroundImage = `url(${images[choice]})`;
   }
 };
