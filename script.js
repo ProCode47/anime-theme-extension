@@ -29,6 +29,21 @@ const getCookie = (cname) => {
 
 const imageChange = () => {
   const images = [
+    "./assets/16729.jpg",
+    "./assets/77572.png",
+    "./assets/112131.jpg",
+    "./assets/118722.png",
+    "./assets/135625.jpg",
+    "./assets/153243.jpg",
+    "./assets/185425.jpg",
+    "./assets/215588.jpg",
+    "./assets/413842.jpg",
+    "./assets/415511.jpg",
+    "./assets/613924.jpg",
+    "./assets/614826.png",
+    "./assets/640956.jpg",
+    "./assets/641968.jpg",
+    "./assets/1097180.png",
     "./assets/144565.jpg",
     "./assets/122122.jpg",
     "./assets/432432.jpg",
@@ -50,7 +65,7 @@ const imageChange = () => {
     "./assets/girl_twilight_clouds_156445_1280x720.jpg",
     "./assets/girl_umbrella_anime_141156_1280x720.jpg",
     "./assets/shooting-star-5e-1280x720.jpg",
-    "./assets/silhouette_night_starry_sky_137292_1280x720.jpg"
+    "./assets/silhouette_night_starry_sky_137292_1280x720.jpg",
   ];
   const savedChoice = getCookie("choices");
 
@@ -98,28 +113,20 @@ pin.addEventListener("click", () => {
 });
 
 document.addEventListener("keypress", (e) => {
-
   if (e.key === "Enter") {
     const queryInfo = {
-    text: query.value
-  };
-  chrome.search.query(
-    queryInfo,
-    (err) => {
-      console.log({err})
-    }
-  )
+      text: query.value,
+    };
+    chrome.search.query(queryInfo, (err) => {
+      console.log({ err });
+    });
   }
-  
 });
 search.addEventListener("click", () => {
   const queryInfo = {
-    text: query.value
+    text: query.value,
   };
-  chrome.search.query(
-    queryInfo,
-    (err) => {
-      console.log({err})
-    }
-  )
+  chrome.search.query(queryInfo, (err) => {
+    console.log({ err });
+  });
 });
